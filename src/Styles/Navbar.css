@@ -1,0 +1,5 @@
+.ContainerN{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient( darkblue , darkred);
+}
