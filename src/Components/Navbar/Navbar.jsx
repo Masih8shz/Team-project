@@ -1,10 +1,31 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import "../../Styles/Navbar.css";
 import logo from "../../Images/LogoWeb.png";
 
 const Navbar = () => {
   const underlineRef = useRef(null);
   const linksContainerRef = useRef(null);
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.add("transition-mode");
+    if (isDark) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+
+    const timeout = setTimeout(() => {
+      document.body.classList.remove("transition-mode");
+    }, 700);
+
+    return () => clearTimeout(timeout);
+  }, [isDark]);
+
+  useEffect(() => {
+    const navbar = document.querySelector(".ContainerN");
+    navbar.classList.add("slide-down");
+  }, []);
 
   const moveUnderline = (e) => {
     const el = e.target;
@@ -20,6 +41,12 @@ const Navbar = () => {
 
   return (
     <div className="ContainerN">
+      <div className="theme-toggle">
+        <button onClick={() => setIsDark(!isDark)}>
+          {isDark ? "☀️" : "🌙"}
+        </button>
+      </div>
+
       <div className="logoWebN">
         <img src={logo} alt="Logo" />
       </div>
@@ -74,7 +101,6 @@ const Navbar = () => {
         >
           About
         </button>
-
         <div ref={underlineRef} className="underline" />
       </div>
     </div>

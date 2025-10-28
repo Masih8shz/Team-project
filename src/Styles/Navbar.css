@@ -1,57 +1,92 @@
 .ContainerN {
   width: 100%;
   height: 70px;
-  background: linear-gradient(to right, #490b0b, #0f0945);
   display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 5px 40px;
-  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(to right, #3f0505, #150639);
+  z-index: 1000;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.ContainerN.slide-down {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.theme-toggle button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.4s ease;
+}
+
+.theme-toggle button:hover {
+  transform: rotate(360deg);
 }
 
 .logoWebN {
   position: absolute;
-  top: 5px;
-  right: 15px;
+  top: 10px;
+  right: 25px;
 }
+
 .logoWebN img {
-  height: 50px;
-  width: 60px;
-  border-radius: 10px;
+  width: 50px;
 }
 
 .navbar-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  width: 100%;
+  gap: 20px;
   position: relative;
-  margin-top: auto;
-  padding-bottom: 5px;
+  bottom: -5px;
 }
 
 .Nav-Btn {
   background: none;
   border: none;
-  color: #ddd;
-  font-size: 1rem;
-  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
   cursor: pointer;
-  transition: color 0.3s ease;
+  position: relative;
+  padding: 5px 10px;
 }
-
-.Nav-Btn:hover {
-  color: orange;
+  
+.Nav-Btn:hover{
+  color: rgb(193, 130, 3);
 }
-
 .underline {
   position: absolute;
   bottom: 0;
-  left: 0;
-  height: 3px;
+  height: 2px;
+  background: rgb(193, 130, 3);
   width: 0;
-  background-color: orange;
-  border-radius: 2px;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #222;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+body.transition-mode {
+  transition: background-color 0.7s ease, color 0.7s ease;
 }
