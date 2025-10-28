@@ -66,9 +66,25 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <div className="col-md-4 mb-4">
+              <div className="card hero-card">
+                <img
+                  src="/lina2.jpg"
+                  className="card-img-top"
+                  alt="Hero 2"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Invoker</h5>
+                  <p className="card-text">
+                    bayad aval piano yad begiri.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
 
      
       <section className="py-5">

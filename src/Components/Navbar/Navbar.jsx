@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import "../../Styles/Navbar.css";
-import logo from "../../Images/LogoWeb.png";
+// import logo from "../../Images/LogoWeb.png";
 
 const Navbar = () => {
   const underlineRef = useRef(null);
@@ -48,7 +48,7 @@ const Navbar = () => {
       </div>
 
       <div className="logoWebN">
-        <img src={logo} alt="Logo" />
+        <img src={"Screenshot 2025-10-26 180604.png"} alt="Logo" />
       </div>
 
       <div className="navbar-links" ref={linksContainerRef}>

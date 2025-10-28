@@ -6,7 +6,7 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  background-image: linear-gradient(to right, #3f0505, #150639);
+  background-image: linear-gradient(to right, #390101, #000000);
   z-index: 1000;
   transform: translateY(-100%);
   opacity: 0;
@@ -46,6 +46,7 @@
 
 .logoWebN img {
   width: 50px;
+  border-radius: 10px;
 }
 
 .navbar-links {
