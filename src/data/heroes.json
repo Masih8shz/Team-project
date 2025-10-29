@@ -30,8 +30,8 @@
     "text": "Ma mage support haro dust darim."
   },
   {
-    "name": "Anti Mage",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/anti_mage.png",
+    "name": "Kunkka",
+    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/kunkka.png",
     "text": "Mana destroy mikonam!"
   },
   {
@@ -50,8 +50,8 @@
     "text": "Rearm hamishe!"
   },
   {
-    "name": "Shadow Fiend",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shadow_fiend.png",
+    "name": "lich",
+    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lich.png",
     "text": "Soul ezafe kardam."
   },
   {
@@ -70,8 +70,8 @@
     "text": "Headshot ro faramos nakon."
   },
   {
-    "name": "Queen of Pain",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/queen_of_pain.png",
+    "name": "Monkey king",
+    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/monkey_king.png",
     "text": "Scream of pain!"
   }
 ]

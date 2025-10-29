@@ -39,7 +39,7 @@ const Home = () => {
       <section
         className="hero-section text-white d-flex align-items-center"
         style={{
-          backgroundImage: "url('/lina.jpg')",
+          backgroundImage: "url('./imgs/background.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
