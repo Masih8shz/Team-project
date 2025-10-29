@@ -1,30 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../Styles/Home.css";
+import "../../Styles/Items.css";
+import heroes from "../../data/heroes.json"; 
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  // لیست ۱۵ تصویر
-  const heroes = [
-    { name: "Phantom Assassin", img: "/heroes/pa.jpg", text: "Kabos support ha va back lane." },
-    { name: "Invoker", img: "/heroes/invoker.jpg", text: "Bayad aval piano yad begiri." },
-    { name: "Lina", img: "/heroes/lina.jpg", text: "Fire lady az jahan e flame." },
-    { name: "Juggernaut", img: "/heroes/juggernaut.jpg", text: "Bepich to spin ta hame bemiran." },
-    { name: "Drow Ranger", img: "/heroes/drow.jpg", text: "Kasi seda nemishe beshne." },
-    { name: "Crystal Maiden", img: "/heroes/cm.jpg", text: "Ma mage support haro dust darim." },
-    { name: "Anti Mage", img: "/heroes/am.jpg", text: "Mana destroy mikonam!" },
-    { name: "Pudge", img: "/heroes/pudge.jpg", text: "Hook kon ya bemir!" },
-    { name: "Sven", img: "/heroes/sven.jpg", text: "Storm hammer be saret!" },
-    { name: "Tinker", img: "/heroes/tinker.jpg", text: "Rearm hamishe!" },
-    { name: "Shadow Fiend", img: "/heroes/sf.jpg", text: "Soul ezafe kardam." },
-    { name: "Legion Commander", img: "/heroes/lc.jpg", text: "Duel mikonim!" },
-    { name: "Axe", img: "/heroes/axe.jpg", text: "Axe likes battle!" },
-    { name: "Sniper", img: "/heroes/sniper.jpg", text: "Headshot ro faramos nakon." },
-    { name: "Queen of Pain", img: "/heroes/qop.jpg", text: "Scream of pain!" },
-  ];
-
+ 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // هر ۵ ثانیه تغییر بده
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 3) % heroes.length);
@@ -32,7 +15,6 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [heroes.length]);
 
-  // سه تصویر فعلی
   const visibleHeroes = heroes.slice(currentIndex, currentIndex + 3);
   if (visibleHeroes.length < 3) {
     visibleHeroes.push(...heroes.slice(0, 3 - visibleHeroes.length));
@@ -40,7 +22,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      {/* ===== HERO SECTION ===== */}
+    
       <section
         className="hero-section text-white d-flex align-items-center"
         style={{
@@ -65,11 +47,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ===== HEROES SECTION ===== */}
+     
       <section className="py-5 bg-light text-center">
         <div className="container">
           <h2 className="section-title mb-5">Heroes</h2>
-
           <div className="row justify-content-center fade-slider">
             {visibleHeroes.map((hero, index) => (
               <div key={index} className="col-md-4 mb-4 fade-slide">
@@ -86,7 +67,44 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ===== TOURNAMENT SECTION ===== */}
+   
+      <section className="items-section py-5">
+        <div className="container text-center">
+          <h2 className="section-title mb-5">Items</h2>
+          <div className="row g-4">
+            <div className="col-md-4">
+              <div className="item-card">
+                <img src="/imgs/aa.jpg" alt="Black King Bar" className="item-img" />
+                <div className="item-info">
+                  <h5>Black King Bar</h5>
+                  <p>dispel mikone.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="item-card">
+                <img src="/imgs/am.jpg" alt="Butterfly" className="item-img" />
+                <div className="item-info">
+                  <h5>Butterfly</h5>
+                  <p>miss mide.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="item-card">
+                <img src="/imgs/void.jpg" alt="Heart of Tarrasque" className="item-img" />
+                <div className="item-info">
+                  <h5>Heart of Tarrasque</h5>
+                  <p>jon mide.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-5">
         <div className="container text-center">
           <h2 className="section-title mb-5">Tournaments</h2>

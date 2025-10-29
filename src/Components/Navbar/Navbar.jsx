@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import "../../Styles/Navbar.css";
-// import logo from "../../Images/LogoWeb.png";
+
 
 const Navbar = () => {
   const underlineRef = useRef(null);
