@@ -1,11 +1,10 @@
 import { useRef, useState, useEffect } from "react";
 import "../../Styles/Navbar.css";
 
-
-const Navbar = () => {
+const Navbar = ({ isDark, setIsDark }) => {
   const underlineRef = useRef(null);
   const linksContainerRef = useRef(null);
-  const [isDark, setIsDark] = useState(false);
+  // const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     document.body.classList.add("transition-mode");

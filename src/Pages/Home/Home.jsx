@@ -4,8 +4,9 @@ import "../../Styles/Items.css";
 import heroes from "../../data/heroes.json";
 import items from "../../data/items.json";
 import { useEffect, useState } from "react";
+import BackgroundEffect from "../../Components/BackGroundEffect";
 
-const Home = () => {
+const Home = ({ isDark }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -33,9 +34,10 @@ const Home = () => {
   if (visibleItems.length < 3) {
     visibleItems.push(...items.slice(0, 3 - visibleItems.length));
   }
-
+  console.log("isDark:", isDark);
   return (
     <div className="home-page">
+      <BackgroundEffect isDark={isDark} />
       <section
         className="hero-section text-white d-flex align-items-center"
         style={{
