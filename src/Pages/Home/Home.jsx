@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../Styles/Home.css";
 import "../../Styles/Items.css";
-import heroes from "../../data/heroes.json"; 
+import heroes from "../../data/heroes.json";
+import items from "../../data/items.json";
 import { useEffect, useState } from "react";
 
 const Home = () => {
- 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -20,9 +20,22 @@ const Home = () => {
     visibleHeroes.push(...heroes.slice(0, 3 - visibleHeroes.length));
   }
 
+  const [currentIndex1, setCurrentIndex1] = useState(0);
+
+  useEffect(() => {
+    const interval1 = setInterval(() => {
+      setCurrentIndex1((prev1) => (prev1 + 3) % items.length);
+    }, 4000);
+    return () => clearInterval(interval1);
+  }, [items.length]);
+
+  const visibleItems = items.slice(currentIndex1, currentIndex1 + 3);
+  if (visibleItems.length < 3) {
+    visibleItems.push(...items.slice(0, 3 - visibleItems.length));
+  }
+
   return (
     <div className="home-page">
-    
       <section
         className="hero-section text-white d-flex align-items-center"
         style={{
@@ -37,7 +50,8 @@ const Home = () => {
           <div className="info-box mx-auto p-4 p-md-6">
             <h1 className="hero-title mb-3">welcome to dota</h1>
             <p className="hero-description mb-4">
-              never dont play dota to if u wand play first drink vodka and play dota
+              never dont play dota to if u wand play first drink vodka and play
+              dota
             </p>
             <div className="hero-buttons">
               <button className="btn btn-primary me-3">Heroes</button>
@@ -47,7 +61,6 @@ const Home = () => {
         </div>
       </section>
 
-     
       <section className="py-5 bg-light text-center">
         <div className="container">
           <h2 className="section-title mb-5">Heroes</h2>
@@ -55,7 +68,11 @@ const Home = () => {
             {visibleHeroes.map((hero, index) => (
               <div key={index} className="col-md-4 mb-4 fade-slide">
                 <div className="card hero-card">
-                  <img src={hero.img} className="card-img-top" alt={hero.name} />
+                  <img
+                    src={hero.img}
+                    className="card-img-top"
+                    alt={hero.name}
+                  />
                   <div className="card-body">
                     <h5 className="card-title">{hero.name}</h5>
                     <p className="card-text">{hero.text}</p>
@@ -67,40 +84,21 @@ const Home = () => {
         </div>
       </section>
 
-   
       <section className="items-section py-5">
         <div className="container text-center">
           <h2 className="section-title mb-5">Items</h2>
           <div className="row g-4">
-            <div className="col-md-4">
-              <div className="item-card">
-                <img src="/imgs/aa.jpg" alt="Black King Bar" className="item-img" />
-                <div className="item-info">
-                  <h5>Black King Bar</h5>
-                  <p>dispel mikone.</p>
+            {visibleItems.map((item, index) => (
+              <div key={index} className="col-md-4">
+                <div className="item-card">
+                  <img src={item.img} alt={item.name} className="item-img" />
+                  <div className="item-info">
+                    <h5>{item.name}</h5>
+                    <p>{item.text}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="col-md-4">
-              <div className="item-card">
-                <img src="/imgs/am.jpg" alt="Butterfly" className="item-img" />
-                <div className="item-info">
-                  <h5>Butterfly</h5>
-                  <p>miss mide.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div className="item-card">
-                <img src="/imgs/void.jpg" alt="Heart of Tarrasque" className="item-img" />
-                <div className="item-info">
-                  <h5>Heart of Tarrasque</h5>
-                  <p>jon mide.</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -111,7 +109,11 @@ const Home = () => {
           <div className="row justify-content-center">
             <div className="col-md-4">
               <div className="card tournament-card">
-                <img src="/ring.jpg" className="card-img-top" alt="Tournament" />
+                <img
+                  src="/ring.jpg"
+                  className="card-img-top"
+                  alt="Tournament"
+                />
                 <div className="card-body">
                   <h5 className="card-title">International</h5>
                   <p className="card-text">mosabeghe alaki pol midan.</p>
