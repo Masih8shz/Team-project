@@ -28,7 +28,7 @@
 .theme-toggle button {
   background: none;
   border: none;
-  text-shadow: 4px 4px 10px yellow;
+  text-shadow: 1px 1px 20px yellow;
   font-size: 22px;
   cursor: pointer;
   color: white;
