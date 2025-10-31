@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../Styles/Navbar.css";
 
 const Navbar = ({ isDark, setIsDark }) => {
@@ -52,7 +52,7 @@ const Navbar = ({ isDark, setIsDark }) => {
 
       <div className="navbar-links" ref={linksContainerRef}>
         <Link
-        to="/"
+          to="/"
           className="Nav-Btn"
           onMouseEnter={moveUnderline}
           onMouseLeave={resetUnderline}
@@ -67,7 +67,7 @@ const Navbar = ({ isDark, setIsDark }) => {
           Heroes
         </button>
         <Link
-        to="/src/Pages/Items/Items.jsx"
+          to="/items"
           className="Nav-Btn"
           onMouseEnter={moveUnderline}
           onMouseLeave={resetUnderline}
