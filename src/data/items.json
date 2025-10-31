@@ -2,91 +2,91 @@
   {
     "id": 1,
     "name": "Abyssal-blade",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/abyssal_blade.png",
-    "text": "zzz"
+    "img": "../Images/items/Abyssal_Blade.jpg",
+    "text": "یه آیتم خفن مخصوص کری‌های مِیلیه که هم جونت زیاد می‌کنه، هم ضرباتت محکم‌تر می‌شن، تازه یه دکمه هم داره که باهاش می‌تونی دشمن رو یه لحظه گیج و بی‌حرکت کنی، مخصوص وقتاییه که می‌خوای یکیو فراری ندی."
   },
   {
     "id": 2,
-    "name": "Ancient-janggo",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ancient_janggo.png",
-    "text": "zzz"
+    "name": "Aegis_of_the_Immortal",
+    "img": "../Images/items/Aegis_of_the_Immortal.png",
+    "text": "یه جور سپر جادوییه که وقتی بمیری، چند ثانیه بعد زنده‌ت می‌کنه با جون و مانای پر. فقط یه بار استفاده داره و از Roshan می‌افته، یعنی اگه بگیریش عملاً یه جون اضافه داری تو درگیری‌ها."
   },
   {
     "id": 3,
-    "name": "Assault",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png",
-    "text": "zzz"
+    "name": "Aeon_Disk",
+    "img": "../Images/items/Aeon_Disk.png",
+    "text": "وقتی یه‌دفعه زیادی دمیج بخوری، این آیتم فعال میشه و برات یه حالت محافظ می‌سازه که چند ثانیه هیچ دمیجی نمی‌خوری و دِباف‌هام پاک می‌شن. بیشتر برای هیروهایی خوبه که راحت‌تر می‌میرن یا می‌خوان زنده بمونن تا بتونن دوباره اسپل بزنن."
   },
   {
     "id": 4,
-    "name": "Butterfly",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/butterfly.png",
-    "text": "zzz"
+    "name": "Aether_Lens",
+    "img": "../Images/items/Aether_Lens.png",
+    "text": "باعث میشه محدوده‌ی اسپل‌هات و آیتم‌هات بیشتر بشه و یه مقدار هم مانا میده. برای هیروهایی که از دور اسپل می‌زنن خیلی خوبه چون می‌تونن امن‌تر بازی کنن و از فاصله‌ی بیشتری ضربه بزنن."
   },
   {
     "id": 5,
-    "name": "Arcane-boots",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_boots.png",
-    "text": "zzz"
+    "name": "Aghanim's_Blessing",
+    "img": "../Images/items/Aghanim's_Blessing.png",
+    "text": "یه آیتم خاصه که وقتی بخوریش (استفاده‌اش کنی) یه قابلیت جدید به هیروت اضافه می‌کنه یا یکی از اسپل‌هات رو قوی‌تر می‌کنه. بعد از خوردنش توی اینونتوری نمی‌مونه، چون مستقیم اثرش روی هیرو فعال میشه."
   },
   {
     "id": 6,
-    "name": "Blade-mail",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blade_mail.png",
-    "text": "zzz"
+    "name": "Aghanim's_Scepter",
+    "img": "../Images/items/Aghanim's_Scepter.png",
+    "text": "یه آیتم خیلی معروفه که معمولاً باعث میشه یکی از قابلیت‌های هیرو قوی‌تر بشه یا یه قابلیت کاملاً جدید بهش اضافه کنه. برعکس نسخه‌ی Blessing، این یکی توی اینونتوری می‌مونه و باید بخریش تا اثرش فعال باشه."
   },
   {
     "id": 7,
-    "name": "Monkey-king-bar",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/monkey_king_bar.png",
-    "text": "zzz"
+    "name": "Aghanim's_Shard",
+    "img": "../Images/items/Aghanim's_Shard.png",
+    "text": "یه آیتم نسبتاً ارزونه که وقتی می‌خری، به هیروت یه قابلیت جدید می‌ده یا یکی از اسکیل‌هاش رو ارتقا می‌ده، ولی بدون اینکه جا توی اینونتوری بگیره. معمولاً وسط بازی می‌خرنش تا تأثیرش تو فایت‌ها بیشتر شه."
   },
   {
     "id": 8,
-    "name": "Black-king-bar",
-    "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
-    "text": "zzz"
+    "name": "Arcane_Blink",
+    "img": "../Images/items/Arcane_Blink.png",
+    "text": "وقتی ازش استفاده می‌کنی، تله‌پورت مثل Blink معمولی انجام می‌ده، ولی بعدش چند ثانیه توانایی‌هات با سرعت خیلی بیشتری کست می‌شن و مانای کمتری مصرف می‌کنن. مخصوص هیروهایی مثل Zeus یا Lina که اسپم اسکیل دارن عالیه."
   },
   {
     "id": 9,
-    "name": "Heart",
-    "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/heart.png",
-    "text": "zzz"
+    "name": "Arcane_Boots",
+    "img": "../Images/items/Arcane_Boots.png",
+    "text": "یه جفت بوت خیلی محبوب بین ساپورت‌هاست که هم سرعت حرکت می‌ده هم با فعال کردنش مانای کل تیمتو تا حدی پر می‌کنه. برای هیروهایی که زیاد اسکیل می‌زنن واقعاً نجات‌دهنده‌ست، مخصوصاً اوایل گیم که همه تشنه‌ی مانان."
   },
   {
     "id": 10,
-    "name": "Force-staff",
-    "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/force_staff.png",
-    "text": "zzz"
+    "name": "Armlet_of_Mordiggian",
+    "img": "../Images/items/Armlet_of_Mordiggian.png",
+    "text": "یه آیتم ریسکی ولی قوی، مخصوص هیروهای استرنج مثل وُر، اس‌اف یا لایف‌استیلر. وقتی فعالش می‌کنی کلی دمیج و استرنج می‌گیری، ولی در عوض جونت کم‌کم کم میشه. اگه بلد باشی باهاش “تُگل” کنی (روشن و خاموش موقع فایت)، می‌تونه جونتو نجات بده یا حتی یه کیل اضافه برات بیاره."
   },
   {
     "id": 11,
-    "name": "Desolator",
-    "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/desolator.png",
-    "text": "zzz"
+    "name": "Assault_Cuirass",
+    "img": "../Images/items/Assault_Cuirass.png",
+    "text": "یه آرمور تیمی خیلی خفن که هم سرعت حمله‌ی خودتو زیاد می‌کنه هم آرمور اطرافیانتو بالا می‌بره، در عوض آرمور دشمنایی که نزدیکتن رو کم می‌کنه. برای هیروهای کری و تانک عالیه چون هم خودت سفت‌تر می‌شی هم کل تیم سود می‌بره."
   },
   {
     "id": 12,
-    "name": "Eye-of-skadi",
-    "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png",
-    "text": "zzz"
+    "name": "Band_of_Elvenskin",
+    "img": "../Images/items/Band_of_Elvenskin.png",
+    "text": "یه آیتم ساده و ارزون که فقط سرعت حمله و چابکیت رو زیاد می‌کنه. معمولاً اوایل بازی می‌گیرنش تا بعداً باهاش آیتمای بزرگ‌تر مثل Yasha یا Manta Style بسازن."
   },
   {
     "id": 13,
-    "name": "Moon-shard",
-    "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/moon_shard.png",
-    "text": "zzz"
+    "name": "Battle_Fury",
+    "img": "../Images/items/Battle_Fury.png",
+    "text": "یه آیتم مخصوص کری‌هاست که باعث میشه ضرباتت به چند تا دشمن اطراف هم بخوره. هم برای فارم کردن فوق‌العاده‌ست، هم توی فایتا وقتی وسط چند نفر وایسادی، همه رو با هم میزنی."
   },
   {
     "id": 14,
-    "name": "Aegis",
-    "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/aegis.png",
-    "text": "zzz"
+    "name": "Belt_of_Strength",
+    "img": "../Images/items/Belt_of_Strength.png",
+    "text": "یه آیتم ساده‌ و ارزونه که فقط یه مقدار Strength (جون و کمی دمیج) میده، معمولاً برای ساخت آیتم‌های بزرگ‌تر مثل Sange یا Power Treads ازش استفاده می‌کنن."
   },
   {
     "id": 15,
-    "name": "Vanguard",
-    "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/vanguard.png",
+    "name": "Black_King_Bar",
+    "img": "../Images/items/Black_King_Bar.png",
     "text": "zzz"
   }
 ]
