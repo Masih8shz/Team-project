@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../Styles/Home.css";
-import "../../Styles/Items.css";
+import "../../Styles/Item.css";
 import heroes from "../../data/heroes.json";
 import items from "../../data/items.json";
 import { useEffect, useState } from "react";

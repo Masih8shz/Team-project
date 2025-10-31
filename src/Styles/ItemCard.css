@@ -1,0 +1,67 @@
+.d2-item-card {
+  position: relative;
+  background: #101010;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.d2-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
+
+.d2-item-image img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.d2-item-name {
+  font-size: 1rem;
+  color: #ff4d4d;
+  margin: 0;
+}
+
+.d2-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  padding: 15px;
+}
+
+.d2-item-card:hover .d2-item-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.d2-overlay-content {
+  text-align: left;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.d2-overlay-content h6 {
+  color: #ff9a5c;
+  margin-bottom: 8px;
+}
+
+.d2-overlay-content p {
+  font-size: 0.85rem;
+  color: #ddd;
+  line-height: 1.4;
+}

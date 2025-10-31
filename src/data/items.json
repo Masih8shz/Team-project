@@ -1,75 +1,90 @@
 [
   {
+    "id": 1,
     "name": "Abyssal-blade",
     "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/abyssal_blade.png",
     "text": "zzz"
   },
   {
+    "id": 2,
     "name": "Ancient-janggo",
     "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ancient_janggo.png",
     "text": "zzz"
   },
   {
+    "id": 3,
     "name": "Assault",
     "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png",
     "text": "zzz"
   },
   {
+    "id": 4,
     "name": "Butterfly",
     "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/butterfly.png",
     "text": "zzz"
   },
   {
+    "id": 5,
     "name": "Arcane-boots",
     "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_boots.png",
     "text": "zzz"
   },
   {
+    "id": 6,
     "name": "Blade-mail",
     "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blade_mail.png",
     "text": "zzz"
   },
   {
+    "id": 7,
     "name": "Monkey-king-bar",
     "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/monkey_king_bar.png",
     "text": "zzz"
   },
   {
+    "id": 8,
     "name": "Black-king-bar",
     "img": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
     "text": "zzz"
   },
   {
+    "id": 9,
     "name": "Heart",
     "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/heart.png",
     "text": "zzz"
   },
   {
+    "id": 10,
     "name": "Force-staff",
     "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/force_staff.png",
     "text": "zzz"
   },
   {
+    "id": 11,
     "name": "Desolator",
     "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/desolator.png",
     "text": "zzz"
   },
   {
+    "id": 12,
     "name": "Eye-of-skadi",
     "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png",
     "text": "zzz"
   },
   {
+    "id": 13,
     "name": "Moon-shard",
     "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/moon_shard.png",
     "text": "zzz"
   },
   {
+    "id": 14,
     "name": "Aegis",
     "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/aegis.png",
     "text": "zzz"
   },
   {
+    "id": 15,
     "name": "Vanguard",
     "img": "https://cdn.steamstatic.com/apps/dota2/images/dota_react/items/vanguard.png",
     "text": "zzz"
