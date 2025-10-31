@@ -1,10 +1,10 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useEffect } from "react";
+import {Link} from "react-router-dom";
 import "../../Styles/Navbar.css";
 
 const Navbar = ({ isDark, setIsDark }) => {
   const underlineRef = useRef(null);
   const linksContainerRef = useRef(null);
-  // const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     document.body.classList.add("transition-mode");
@@ -51,13 +51,14 @@ const Navbar = ({ isDark, setIsDark }) => {
       </div>
 
       <div className="navbar-links" ref={linksContainerRef}>
-        <button
+        <Link
+        to="/"
           className="Nav-Btn"
           onMouseEnter={moveUnderline}
           onMouseLeave={resetUnderline}
         >
           Home
-        </button>
+        </Link>
         <button
           className="Nav-Btn"
           onMouseEnter={moveUnderline}
@@ -65,13 +66,14 @@ const Navbar = ({ isDark, setIsDark }) => {
         >
           Heroes
         </button>
-        <button
+        <Link
+        to="/src/Pages/Items/Items.jsx"
           className="Nav-Btn"
           onMouseEnter={moveUnderline}
           onMouseLeave={resetUnderline}
         >
           Items
-        </button>
+        </Link>
         <button
           className="Nav-Btn"
           onMouseEnter={moveUnderline}
