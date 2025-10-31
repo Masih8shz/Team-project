@@ -35,7 +35,6 @@
   background: linear-gradient(to right, #ff0000, #ff6600);
 }
 
-/* گرید آیتم‌ها */
 .d2-items-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -55,7 +54,6 @@
   }
 }
 
-/* pagination */
 .d2-pagination {
   display: flex;
   justify-content: center;
