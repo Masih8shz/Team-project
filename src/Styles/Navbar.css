@@ -1,5 +1,5 @@
 .ContainerN {
-  border-bottom: 2px solid darkred;
+  border-bottom: 2px solid rgb(18, 1, 1);
   width: 100%;
   height: 70px;
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  background-image: linear-gradient(to right, #390101, #000000);
+  background-image: linear-gradient(to right, #13050e, #4f0c36);
   z-index: 1000;
   transform: translateY(-100%);
   opacity: 0;
