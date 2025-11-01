@@ -35,7 +35,7 @@ const Home = ({ isDark }) => {
   if (visibleItems.length < 3) {
     visibleItems.push(...items.slice(0, 3 - visibleItems.length));
   }
-  console.log("isDark:", isDark);
+
   const [shopIndex, setShopIndex] = useState(0);
 
 useEffect(() => {
