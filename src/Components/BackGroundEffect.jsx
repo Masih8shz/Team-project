@@ -16,10 +16,9 @@ const BackgroundEffect = ({ isDark }) => {
 
     let particles = [];
     const maxParticles = 60;
-    const duration = 5000; // زمان ۵ ثانیه
-    let alpha = 1; // شفافیت برای fade-out
+    const duration = 5000;
+    let alpha = 1;
 
-    // 🌙 برف
     if (isDark) {
       for (let i = 0; i < maxParticles; i++) {
         particles.push({
@@ -29,9 +28,7 @@ const BackgroundEffect = ({ isDark }) => {
           s: Math.random() * 1 + 0.5,
         });
       }
-    }
-    // ☀️ حباب طلایی
-    else {
+    } else {
       for (let i = 0; i < maxParticles; i++) {
         particles.push({
           x: Math.random() * canvas.width,
@@ -51,7 +48,6 @@ const BackgroundEffect = ({ isDark }) => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       if (elapsed > duration) {
-        // به مرور محو بشه
         alpha -= 0.02;
         if (alpha <= 0) {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -60,7 +56,6 @@ const BackgroundEffect = ({ isDark }) => {
         ctx.globalAlpha = alpha;
       }
 
-      // رسم برف یا حباب‌ها
       particles.forEach((p) => {
         if (isDark) {
           ctx.fillStyle = "rgba(255,255,255,0.9)";
