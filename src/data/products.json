@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "ess",
+    "price": 26.50,
+    "category": "arcana",
+    "image": "../Images/heroes/es.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Frost Avalanche",
+    "price": 18.90,
+    "category": "arcana",
+    "image": "../Images/heroes/jugg.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Tempest Helm of Thundergod",
+    "price": 21.00,
+    "category": "arcana",
+    "image": "../Images/heroes/pa.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Feast of Abscession",
+    "price": 23.75,
+    "category": "arcana",
+    "image": "../Images/heroes/qop.png"
+  },
+  {
+    "id": 5,
+    "name": "Golden Basher of Mage Skulls",
+    "price": 52.40,
+    "category": "immortal",
+    "image": "../Images/heroes/sf.png"
+  },
+  {
+    "id": 6,
+    "name": "Golden Immortal Blade",
+    "price": 47.80,
+    "category": "immortal",
+    "image": "../Images/heroes/zeus.png"
+  },
+  {
+    "id": 7,
+    "name": "Eye of Avernus Shield",
+    "price": 8.90,
+    "category": "immortal",
+    "image": "../Images/items/Broadsword.png"
+  },
+  {
+    "id": 8,
+    "name": "Golden Staff of Gun-Yu",
+    "price": 39.90,
+    "category": "immortal",
+    "image": "../Images/items/Buckler.png"
+  },
+  {
+    "id": 9,
+    "name": "Dragonclaw Hook",
+    "price": 14.20,
+    "category": "rare",
+    "image": "../Images/items/Butterfly.png"
+  },
+  {
+    "id": 10,
+    "name": "Golden Moon Griffon",
+    "price": 7.60,
+    "category": "rare",
+    "image": "../Images/items/Chainmail.png"
+  }
+]

@@ -1,38 +1,105 @@
-.shop-section {
-  background: #0b0f18;
-  color: white;
+
+.shop-page {
+  padding-top: 120px !important; 
+  min-height: 100vh;
 }
 
-.shop-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 215, 0, 0.3);
+
+.filter-buttons {
+  justify-content: center;
+  margin-bottom: 50px;
+  z-index: 5;
+  position: relative;
+}
+
+.btn-filter {
+  background: #1b1b1f;
+  border: 1px solid #444;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #ddd;
+  transition: 0.25s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-filter i {
+  font-size: 18px;
+}
+
+.btn-filter:hover {
+  background: #2c2c34;
+  transform: translateY(-2px);
+  border-color: #b078ff;
+  color: #b078ff;
+}
+
+
+.btn-filter.active {
+  background: linear-gradient(145deg, #b078ff, #7a3aff);
+  color: #fff;
+  border-color: #a86bff;
+  box-shadow: 0 0 15px rgba(168, 107, 255, 0.6);
+}
+
+
+.product-card {
+  transition: 0.3s ease-in-out;
+}
+
+
+.product-card.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.product-card.hide {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  position: absolute;
+}
+
+
+.item-box {
+  background: #0f1014;
+  border: 1px solid #292b31;
   border-radius: 12px;
-  backdrop-filter: blur(6px);
-  transition: .3s;
-  color: rgb(197, 92, 157);
-
-}
-.shop-card2 {
-    color: aqua;
-}
-
-.shop-card:hover {
-  transform: translateY(-5px) scale(1.03);
-  border-color: gold;
-  box-shadow: 0 0 15px gold;
+  padding: 15px;
+  text-align: center;
+  transition: 0.25s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.item-box:hover {
+  transform: translateY(-5px);
+  border-color: #9e65ff;
+  box-shadow: 0 0 20px rgba(158, 101, 255, 0.4);
+}
 
-.shop-img {
+.item-box img {
   width: 100%;
-  height: 200px;
+  height: 130px;
   object-fit: contain;
-  border-radius: 8px;
-  border: 2px solid gold;
+  margin-bottom: 10px;
 }
 
-.buy-btn {
+.item-box h6 {
+  font-size: 14px;
+  color: #fff;
+  margin: 8px 0;
   font-weight: bold;
-  border-radius: 8px;
-  padding: 6px 15px;
+}
+
+.item-box p {
+  font-size: 14px;
+  color: #ffa800;
+  margin-bottom: 0;
+  font-weight: 600;
 }

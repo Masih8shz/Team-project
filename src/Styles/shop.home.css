@@ -1,0 +1,38 @@
+.shop-section {
+  background: #0b0f18;
+  color: white;
+}
+
+.shop-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  transition: .3s;
+  color: rgb(197, 92, 157);
+
+}
+.shop-card2 {
+    color: aqua;
+}
+
+.shop-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  border-color: gold;
+  box-shadow: 0 0 15px gold;
+}
+
+
+.shop-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 2px solid gold;
+}
+
+.buy-btn {
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 15px;
+}

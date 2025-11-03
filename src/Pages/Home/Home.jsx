@@ -6,7 +6,7 @@ import items from "../../data/items.json";
 import { useEffect, useState } from "react";
 import BackgroundEffect from "../../Components/BackGroundEffect";
 import shop from "../../data/shop.json";
-import "../../Styles/shop.css";
+import "../../Styles/shop.home.css";
 const Home = ({ isDark }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
