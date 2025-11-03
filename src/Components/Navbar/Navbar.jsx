@@ -74,12 +74,15 @@ const Navbar = ({ isDark, setIsDark }) => {
         >
           Items
         </Link>
+        
          <Link
           to="/shop"
           className="Nav-Btn"
           onMouseEnter={moveUnderline}
           onMouseLeave={resetUnderline}
+          
         >
+          
           shop
         </Link>
         <button
