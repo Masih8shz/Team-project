@@ -1,12 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import "../../Styles/Home.css";
 import "../../Styles/Item.css";
-import heroes from "../../data/heroes.json";
-import items from "../../data/items.json";
-import { useEffect, useState } from "react";
-import BackgroundEffect from "../../Components/BackGroundEffect";
-import shop from "../../data/shop.json";
 import "../../Styles/shop.home.css";
+
+import heroes from "../../data/heroes.json";
+import items from "../../data/items.home.json";
+import shop from "../../data/shop.json";
+
+import BackgroundEffect from "../../Components/BackGroundEffect";
+
 const Home = ({ isDark }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -38,17 +44,17 @@ const Home = ({ isDark }) => {
 
   const [shopIndex, setShopIndex] = useState(0);
 
-useEffect(() => {
-  const i = setInterval(() => {
-    setShopIndex(prev => (prev + 2) % shop.length);
-  }, 4500);
-  return () => clearInterval(i);
-}, []);
-  
-const visibleShop = shop.slice(shopIndex, shopIndex + 2);
-if (visibleShop.length < 2) {
-  visibleShop.push(...shop.slice(0, 2 - visibleShop.length));
-}
+  useEffect(() => {
+    const i = setInterval(() => {
+      setShopIndex((prev) => (prev + 2) % shop.length);
+    }, 4500);
+    return () => clearInterval(i);
+  }, []);
+
+  const visibleShop = shop.slice(shopIndex, shopIndex + 2);
+  if (visibleShop.length < 2) {
+    visibleShop.push(...shop.slice(0, 2 - visibleShop.length));
+  }
   return (
     <div className="home-page">
       <BackgroundEffect isDark={isDark} />
@@ -77,7 +83,7 @@ if (visibleShop.length < 2) {
         </div>
       </section>
 
-      <section className="py-5 bg-light text-center">
+      <section className="py-5 text-center heroes-section">
         <div className="container">
           <h2 className="section-title mb-5">Heroes</h2>
           <div className="row justify-content-center fade-slider">
@@ -102,7 +108,9 @@ if (visibleShop.length < 2) {
 
       <section className="items-section py-5">
         <div className="container text-center">
-          <h2 className="section-title mb-5">Items</h2>
+          <Link to="/Items" className="section-title mb-5">
+            Items
+          </Link>
           <div className="row g-4">
             {visibleItems.map((item, index) => (
               <div key={index} className="col-md-4">
@@ -117,35 +125,37 @@ if (visibleShop.length < 2) {
             ))}
           </div>
         </div>
-
-
-
-
-
       </section>
       <section className="shop-section py-5">
-  <div className="container text-center">
-    <h2 className="section-title mb-5">Shop</h2>
+        <div className="container text-center">
+          <h2 className="section-title mb-5">Shop</h2>
 
-    <div className="row justify-content-center g-4">
-      {visibleShop.map((product, index) => (
-        <div key={index} className="col-md-5">
-          <div className="shop-card p-3">
-            <img src={product.img} alt={product.name} className="shop-img shop-img2 mb-3" />
-            <h4>{product.name}</h4>
-            <p className="shop-card2">{product.desc}</p>
-            <div className="d-flex justify-content-between align-items-center mt-3">
-              <strong className="text-warning">{product.price}</strong>
-              <button className="btn btn-success buy-btn">Buy</button>
-            </div>
+          <div className="row justify-content-center g-4">
+            {visibleShop.map((product, index) => (
+              <div key={index} className="col-md-5">
+                <div className="shop-card p-3">
+                  <img
+                    src={product.img}
+                    alt={product.name}
+                    className="shop-img shop-img2 mb-3"
+                  />
+                  <h4>{product.name}</h4>
+                  <p className="shop-card2">{product.desc}</p>
+                  <div className="d-flex justify-content-between align-items-center mt-3">
+                    <strong className="text-warning">{product.price}</strong>
+                    <button className="btn btn-success buy-btn">Buy</button>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
-      <section className="py-5">
+      <section className="py-5" style={{
+          background: "#0b0f18",
+          borderTop: "1px solid darkblue"
+      }} >
         <div className="container text-center">
           <h2 className="section-title mb-5">Tournaments</h2>
           <div className="row justify-content-center">
