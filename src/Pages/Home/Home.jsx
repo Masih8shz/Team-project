@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "../../Styles/Home.css";
 import "../../Styles/Item.css";
@@ -107,7 +108,7 @@ const Home = ({ isDark }) => {
 
       <section className="items-section py-5">
         <div className="container text-center">
-          <h2 className="section-title mb-5">Items</h2>
+          <Link to="/Items" className="section-title mb-5">Items</Link>
           <div className="row g-4">
             {visibleItems.map((item, index) => (
               <div key={index} className="col-md-4">
