@@ -108,7 +108,9 @@ const Home = ({ isDark }) => {
 
       <section className="items-section py-5">
         <div className="container text-center">
-          <Link to="/Items" className="section-title mb-5">Items</Link>
+          <Link to="/Items" className="section-title mb-5">
+            Items
+          </Link>
           <div className="row g-4">
             {visibleItems.map((item, index) => (
               <div key={index} className="col-md-4">
