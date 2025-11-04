@@ -104,13 +104,20 @@ const Navbar = ({ isDark, setIsDark }) => {
           </svg>
           Items
         </Link>
+<<<<<<< HEAD
         <Link
           dir="rtl"
+=======
+        
+         <Link
+>>>>>>> 3ec4130ebf79e6faff02fed742a16b9efeaec525
           to="/shop"
           className="Nav-Btn"
           onMouseEnter={moveUnderline}
           onMouseLeave={resetUnderline}
+          
         >
+<<<<<<< HEAD
           <svg
             dir="ltr"
             style={{ marginBottom: 2 }}
@@ -123,6 +130,9 @@ const Navbar = ({ isDark, setIsDark }) => {
           >
             <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
           </svg>
+=======
+          
+>>>>>>> 3ec4130ebf79e6faff02fed742a16b9efeaec525
           shop
         </Link>
         <button

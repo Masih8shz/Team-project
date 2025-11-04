@@ -4,17 +4,27 @@ import ProductCard from "../../Components/ProductCard/ProductCard";
 import "../../Styles/shop.css"
 const Shop = () => {
   const [filter, setFilter] = useState("all");
-
-  const filteredProducts =
-    filter === "all"
-      ? products
-      : products.filter((item) => item.category === filter);
+  const[search, setSearch] = useState("");
+  const filteredProducts = products.filter((item) => {
+  const matchCategory = filter === "all" || item.category === filter;
+  const matchSearch = item.name.toLowerCase().includes(search.toLowerCase());
+  return matchCategory && matchSearch;
+});
 
   return (
     <div className="shop-page container py-5">
 
    
       <div className="filter-buttons d-flex gap-3 mb-4">
+        <div className="search-box mb-4">
+  <input
+    type="search"
+    className="form-control search-input"
+    placeholder="Search item..."
+    value={search}
+    onChange={(e) => setSearch(e.target.value)}
+  />
+</div>
         <button className={`btn-filter ${filter==="all"?"active":""}`} onClick={() => setFilter("all")}>
           <i className="bi bi-grid-3x3-gap"></i> All
         </button>
