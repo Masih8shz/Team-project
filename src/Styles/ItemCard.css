@@ -1,47 +1,58 @@
 .d2-item-card {
   position: relative;
-  background: #101010;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  transition: all 0.25s ease;
-  cursor: pointer;
-  color: #fff;
+  background: #181818;
+  border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
   overflow: hidden;
+  user-select: none;
+  width: 100%;
+  max-width: 280px;
+  min-height: 280px;
 }
 
 .d2-item-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
 }
 
 .d2-item-image img {
-  width: 100%;
-  max-width: 120px;
-  height: auto;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
-  margin-bottom: 8px;
-  border-radius: 6px;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.d2-item-card:hover .d2-item-image img {
+  transform: scale(1.1);
 }
 
 .d2-item-name {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: #ff4d4d;
-  margin: 0;
+  margin: 12px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .d2-item-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.92);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  padding: 15px;
+  transition: all 0.3s ease;
+  padding: 18px;
 }
 
 .d2-item-card:hover .d2-item-overlay {
@@ -50,18 +61,55 @@
 }
 
 .d2-overlay-content {
-  text-align: left;
-  max-height: 100%;
+  text-align: center;
+  max-height: 160px;
   overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: #ff4d4d #222;
+}
+
+.d2-overlay-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.d2-overlay-content::-webkit-scrollbar-thumb {
+  background-color: #ff4d4d;
+  border-radius: 10px;
+}
+
+.d2-overlay-content::-webkit-scrollbar-track {
+  background: #222;
 }
 
 .d2-overlay-content h6 {
   color: #ff9a5c;
   margin-bottom: 8px;
+  font-size: 1rem;
 }
 
 .d2-overlay-content p {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #ddd;
-  line-height: 1.4;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.expand-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.expand-btn:hover {
+  transform: translateX(-50%) scale(1.2);
 }

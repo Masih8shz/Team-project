@@ -59,6 +59,7 @@
 
 .Nav-Btn {
   background: none;
+  text-decoration: none;
   border: none;
   text-shadow: 2px 4px 10px white;
   color: rgb(255, 255, 255);
