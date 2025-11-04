@@ -2,7 +2,7 @@ import { useState } from "react";
 import ItemCard from "../../Components/ItemCard/ItemCard";
 import "../../Styles/Items.css";
 import itemsData from "../../data/items.json";
-import BackgroundEffect from './../../Components/BackGroundEffect';
+import BackgroundEffect from "./../../Components/BackGroundEffect";
 
 const Items = ({ isDark }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -15,12 +15,15 @@ const Items = ({ isDark }) => {
 
   const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentItems = filteredItems.slice(startIndex, startIndex + itemsPerPage);
+  const currentItems = filteredItems.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
 
   return (
     <section className={`d2-items-section ${isDark ? "dark-mode" : ""}`}>
+      <BackgroundEffect isDark={isDark} />
       <div className="d2-items-container">
-        <BackgroundEffect isDark={isDark}/>
         <h2 className="d2-items-title">Dota 2 Items</h2>
 
         <input

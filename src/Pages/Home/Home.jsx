@@ -83,7 +83,7 @@ const Home = ({ isDark }) => {
         </div>
       </section>
 
-      <section className="py-5 bg-light text-center">
+      <section className="py-5 text-center heroes-section">
         <div className="container">
           <h2 className="section-title mb-5">Heroes</h2>
           <div className="row justify-content-center fade-slider">
@@ -152,7 +152,10 @@ const Home = ({ isDark }) => {
         </div>
       </section>
 
-      <section className="py-5">
+      <section className="py-5" style={{
+          background: "#0b0f18",
+          borderTop: "1px solid darkblue"
+      }} >
         <div className="container text-center">
           <h2 className="section-title mb-5">Tournaments</h2>
           <div className="row justify-content-center">
