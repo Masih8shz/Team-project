@@ -1,0 +1,178 @@
+/* 🌌 پس‌زمینه و چیدمان کلی */
+.auth-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #0b0012 0%, #000 100%);
+}
+
+/* Canvas باران */
+.rain-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* فرم شیشه‌ای وسط صفحه */
+.auth-form {
+  position: relative;
+  z-index: 3;
+  width: 360px;
+  padding: 2.3rem 2rem;
+  border-radius: 18px;
+  background: rgba(30, 0, 35, 0.45);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 40px rgba(120, 0, 180, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 1.2s ease-out;
+}
+
+/* fade-in اولیه */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* عنوان */
+.auth-form h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: #f7ccff;
+  text-shadow: 0 0 10px rgba(255, 100, 200, 0.7);
+  letter-spacing: 1px;
+}
+
+/* فیلدها */
+.form-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+/* لیبل */
+.lbl {
+  color: #d9bdf3;
+  font-size: 0.9rem;
+  text-align: right;
+  margin-top: 0.8rem;
+  transition: 0.3s;
+}
+
+/* 🔽 ورودی‌ها با خط زیر */
+.auth-form input {
+  width: 100%;
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
+  padding: 0.8rem 0.6rem;
+  border: none;
+  border-bottom: 2px solid rgba(160, 0, 160, 0.3);
+  background: transparent;
+  color: #f5e8ff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-form input::placeholder {
+  color: #a88ab3;
+}
+
+/* افکت فوکوس */
+.auth-form input:focus {
+  outline: none;
+  border-bottom-color: #b300b3;
+  box-shadow: 0 4px 12px rgba(179, 0, 179, 0.25);
+  transform: translateY(-1px);
+}
+
+/* حالت خطا */
+.fld-error {
+  border-bottom-color: #ff4d4d !important;
+  box-shadow: 0 4px 10px rgba(255, 80, 80, 0.25);
+}
+
+/* متن خطا */
+.field-error {
+  color: #ff99aa;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  text-align: right;
+  line-height: 1.4;
+  min-height: 18px; /* برای جلوگیری از پرش صفحه */
+}
+
+/* دکمه */
+.auth-form button {
+  width: 100%;
+  margin-top: 1.4rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #5b0060, #9c004e);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 0, 100, 0.4);
+  transition: all 0.3s ease;
+}
+
+.auth-form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #a00060, #ff0077);
+  box-shadow: 0 0 20px rgba(255, 0, 150, 0.5);
+}
+
+/* لینک‌ها و تغییر حالت ورود/ثبت‌نام */
+.switch {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: #d6aadd;
+  text-shadow: 0 0 4px rgba(255, 100, 255, 0.3);
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #ff66c4;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link-btn:hover {
+  color: #ff99e9;
+  text-shadow: 0 0 8px rgba(255, 100, 255, 0.6);
+}
+
+/* حالت لودینگ */
+.loading {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+/* 📱 ریسپانسیو */
+@media (max-width: 600px) {
+  .auth-form {
+    width: 85%;
+    padding: 1.8rem 1.2rem;
+    border-radius: 14px;
+  }
+}

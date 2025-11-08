@@ -6,6 +6,7 @@ import Items from "./Pages/Items/Items";
 import Shop from "./Pages/Shop/Shop";
 import ShoppingCart from "./Pages/Shop/ShoppingCart";
 import { CartProvider } from "./Context/CartContext";
+import AuthPage from "./Pages/Auth/AuthPage";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -21,6 +22,7 @@ function App() {
           <Route path="/items" element={<Items isDark={isDark} />} />
           <Route path="/shop" element={<Shop isDark={isDark} />} />
           <Route path="/cart" element={<ShoppingCart />} />
+          <Route path="/auth" element={<AuthPage />} />
         </Routes>
       </Router>
      
