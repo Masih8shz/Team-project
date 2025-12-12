@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import products from "../../data/products.json";
 import "../../Styles/shop.css";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../Context/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 const Shop = () => {
   const [filter, setFilter] = useState("all");

@@ -5,7 +5,7 @@ import Home from "./Pages/Home/Home";
 import Items from "./Pages/Items/Items";
 import Shop from "./Pages/Shop/Shop";
 import ShoppingCart from "./Pages/Shop/ShoppingCart";
-import { CartProvider } from "./Context/CartContext";
+import { CartProvider } from "./context/CartContext";
 import AuthPage from "./Pages/Auth/AuthPage";
 
 function App() {

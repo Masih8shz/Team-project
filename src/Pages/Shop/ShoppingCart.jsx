@@ -1,4 +1,4 @@
-import { useCart } from "../../Context/CartContext"
+import { useCart } from "../../context/CartContext"
 import { Link } from "react-router-dom";
 import "../../Styles/cart.css";
 
@@ -8,7 +8,7 @@ const ShoppingCart = () => {
 
 const totalPrice = cart?.reduce((sum, item) => sum + item.price, 0) || 0;
 
-  if (!cart?.length) {
+  if (!cart?.length) {                      
     return (
       <div className="cart-container empty-cart">
         <h2>Your cart is empty 🛒</h2>
